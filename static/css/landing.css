@@ -1,0 +1,64 @@
+/* ------------------------------------------------------------------ */
+/* Hero title highlight                                                 */
+/* ------------------------------------------------------------------ */
+
+.hero-highlight {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Mock card — stats row                                               */
+/* ------------------------------------------------------------------ */
+
+.mock-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.mock-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0 0.9rem;
+}
+
+.mock-stat:first-child { padding-left: 0; }
+.mock-stat:last-child  { padding-right: 0; }
+
+.mock-stat:not(:last-child) {
+    border-right: 1px solid var(--border-soft);
+}
+
+.mock-stat-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.mock-stat-value {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--ink);
+    line-height: 1.15;
+}
+
+.mock-stat-change {
+    font-size: 0.7rem;
+    color: var(--ink-faint);
+}
+
+.mock-up   { color: #16a34a; }
+.mock-warn { color: #d97706; }
+
+/* ------------------------------------------------------------------ */
+/* Mock card — bar rows (no amount column)                             */
+/* ------------------------------------------------------------------ */
+
+.hero .mock-bar-row {
+    grid-template-columns: 56px 1fr;
+}
